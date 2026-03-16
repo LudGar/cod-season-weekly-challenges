@@ -1005,39 +1005,7 @@ function setV(si,w,m,c,val,e){
 function setSeason(si){D.act=si;render();}
 function setWeek(si,w){AW[si]=w;render();}
 function setMode(si,w,m){AM[`${si}-${w}`]=m;render();}
-function addSeason(){
-  const n=D.seasons.length+1;
-  const ns=buildFromDefaults().seasons[0];
-  ns.name=`Season ${n}`;
-  D.seasons.push(ns);
-  D.act=D.seasons.length-1;
-  persist();render();
-}
-function delSeason(si,e){
-  e.stopPropagation();
-  if(D.seasons.length<=1)return;
-  if(!confirm(`Delete "${D.seasons[si].name}"? All progress will be lost.`))return;
-  D.seasons.splice(si,1);if(D.act>=D.seasons.length)D.act=D.seasons.length-1;
-  persist();render();
-}
-function toggleEdit(){
-  editMode=!editMode;
-  const b=document.getElementById('editBtn'),sv=document.getElementById('saveBtn'),f=document.getElementById('editFloat');
-  b.textContent=editMode?'✕ Cancel':'✏ Edit';
-  b.className=editMode?'btn btn-edit on':'btn btn-edit';
-  sv.style.display=editMode?'block':'none';
-  f.className=editMode?'edit-float on':'edit-float';
-  render();
-}
-function saveAll(){
-  document.querySelectorAll('[id^="i-"]').forEach(el=>{
-    const p=el.id.slice(2).split('-');
-    const si=+p[0],w=+p[1],m=p[2],c=+p[3];
-    const om=pv(D.seasons[si].challenges[w][m][c].text);
-    D.seasons[si].challenges[w][m][c].text=el.value;
-    const nm=pv(el.value);
-    if(nm!==om){D.seasons[si].vp[w][m][c]=0;if(!nm)D.seasons[si].progress[w][m][c]=false;}
-  });
+
   persist();editMode=false;
   document.getElementById('editBtn').textContent='✏ Edit';
   document.getElementById('editBtn').className='btn btn-edit';
