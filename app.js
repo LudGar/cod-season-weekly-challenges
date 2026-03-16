@@ -519,40 +519,30 @@ const DEFAULT_SEASONS = [
           { text: "Get a Kill without taking damage [5] times", xp: 2500 }
         ]
       },
-      4: {
-        COOP: [
-          { text: "In Endgame: Clear [15] Command Centers or Guild Checkpoints", xp: 5000 },
-          { text: "Get [200] Eliminations with a Weapon at Epic Rarity or Higher", xp: 5000 },
-          { text: "Eliminate [15] Guild Guardians", xp: 3500 },
-          { text: "Kill [50] Guild G-R5 or G-R6 disrupted by your EMP Grenade Equipment", xp: 3500 },
-          { text: "Eliminate [10] Special or Elite enemies in a Single Match", xp: 2500 },
-          { text: "Kill [25] Enemies stunned by your Mega Jump or Crash Cart Ability", xp: 2500 }
-        ],
-        MULTIPLAYER: [
-          { text: "Get [50] Headshots", xp: 5000 },
-          { text: "With the Enforcer, Recon, or Strategist Combat Specialty equipped: get [250] Eliminations", xp: 5000 },
-          { text: "With a Crossbar Under-barrel equipped: get [100] Eliminations", xp: 3500 },
-          { text: "Get [10] Kills with a Lethal that has an Overclock equipped", xp: 3500 },
-          { text: "Kill [10] Enemies distracted by your Decoy Grenade Tactical or Echo Unit Field Upgrade", xp: 2500 },
-          { text: "Get [3] Kills with a Weapon without reloading it", xp: 2500 }
-        ],
-        ZOMBIES: [
-          { text: "Get [500] Kills using Field Upgrades", xp: 5000 },
-          { text: "Get [2] Critical Kills with a single shot [150] times", xp: 5000 },
-          { text: "Get [350] Hipfire Kills with SMGs", xp: 3500 },
-          { text: "Kill [200] Zombies distracted by your Decoy Grenade Tactical", xp: 3500 },
-          { text: "Get [150] Kills with Weapons from the Mystery Box", xp: 2500 },
-          { text: "Complete [5] Rounds without going down [3] times", xp: 2500 }
-        ],
-        WARZONE: [
-          { text: "Complete [15] Contracts", xp: 5000 },
-          { text: "Get [5] Eliminations in a single match [5] times", xp: 5000 },
-          { text: "Get [10] Eliminations with Shotguns", xp: 3500 },
-          { text: "Get [10] Kills while your Killstreak is active", xp: 3500 },
-          { text: "Complete 2 Supply Run Contracts in a single match", xp: 2500 },
-          { text: "Open [2] Legendary Loot Crates in a single match [3] times", xp: 2500 }
-        ]
-      },
+      4: { COOP: [    { text: "In Endgame: Clear [15] Command Centers or Guild Checkpoints",                               xp: 5000 },
+                      { text: "Get [200] Eliminations with a Weapon at Epic Rarity or Higher",                             xp: 5000 },
+                      { text: "Eliminate [15] Guild Guardians",                                                            xp: 3500 },
+                      { text: "Kill [50] Guild G-R5 or G-R6 disrupted by your EMP Grenade Equipment",                      xp: 3500 },
+                      { text: "Eliminate 10 Special or Elite enemies in a Single Match",                                   xp: 2500 },
+                      { text: "Kill [25] Enemies stunned by your Mega Jump or Crash Cart Ability",                         xp: 2500 }],
+        MULTIPLAYER: [{ text: "Get [50] Headshots",                                                                        xp: 5000 },
+                      { text: "With the Enforcer, Recon, or Strategist Combat Specialty equipped: get [250] Eliminations", xp: 5000 },
+                      { text: "With a Crossbar Under-barrel equipped: get [100] Eliminations",                             xp: 3500 },
+                      { text: "Get [10] Kills with a Lethal that has an Overclock equipped",                               xp: 3500 },
+                      { text: "Kill [10] Enemies distracted by your Decoy Grenade Tactical or Echo Unit Field Upgrade",    xp: 2500 },
+                      { text: "Get [3] Kills with a Weapon without reloading it",                                          xp: 2500 }],
+        ZOMBIES: [    { text: "Get [500] Kills using Field Upgrades",                                                      xp: 5000 },
+                      { text: "Get [2] Critical Kills with a single shot [150] times",                                     xp: 5000 },
+                      { text: "Get [350] Hipfire Kills with SMGs",                                                         xp: 3500 },
+                      { text: "Kill [200] Zombies distracted by your Decoy Grenade Tactical",                              xp: 3500 },
+                      { text: "Get [150] Kills with Weapons from the Mystery Box",                                         xp: 2500 },
+                      { text: "Complete [5] Rounds without going down [3] times",                                          xp: 2500 }],
+        WARZONE: [    { text: "Complete [15] Contracts",                                                                   xp: 5000 },
+                      { text: "Get [5] Eliminations in a single match [5] times",                                          xp: 5000 },
+                      { text: "Get [10] Eliminations with Shotguns",                                                       xp: 3500 },
+                      { text: "Get [10] Kills while your Killstreak is active",                                            xp: 3500 },
+                      { text: "Complete 2 Supply Run Contracts in a single match",                                         xp: 2500 },
+                      { text: "Open [2] Legendary Loot Crates in a single match [3] times",                                xp: 2500 }]},
 
       5: { COOP: [    { text: "In Endgame: Complete [25] Activities or Assignments in Zone III or higher",            xp: 5000 },
                       { text: "In Endgame: Eliminate [10] HVTs or Prime Targets in Zone II or higher",                xp: 5000 },
@@ -573,11 +563,11 @@ const DEFAULT_SEASONS = [
                       { text: "Have [8] Perks active at one time",                                                    xp: 2500 },
                       { text: "Get [300] Kills with Scorestreaks",                                                    xp: 2500 }],
         WARZONE: [    { text: "Get [25] Eliminations with Marksman Rifles",                                           xp: 5000 },
-          { text: "Get [20] Kills while under fire",                                                                  xp: 5000 },
-          { text: "In Black Ops Royale: Earn [2] Top 10 Placements",                                                  xp: 3500 },
-          { text: "In Black Ops Royale: Revive or Redeploy your squad [3] times",                                     xp: 3500 },
-          { text: "Get [10] Eliminations using Ground Looted Weapons",                                                xp: 2500 },
-          { text: "In Black Ops Royale: Travel [200] meters with the Grapple Hook",                                   xp: 2500 }]},
+                      { text: "Get [20] Kills while under fire",                                                      xp: 5000 },
+                      { text: "In Black Ops Royale: Earn [2] Top 10 Placements",                                      xp: 3500 },
+                      { text: "In Black Ops Royale: Revive or Redeploy your squad [3] times",                         xp: 3500 },
+                      { text: "Get [10] Eliminations using Ground Looted Weapons",                                    xp: 2500 },
+                      { text: "In Black Ops Royale: Travel [200] meters with the Grapple Hook",                       xp: 2500 }]},
       // Week 7 and Week 8 placeholders, matching weeks: 8 and the TBD rewards above
       6: tbdWeek(7, 2),
       7: tbdWeek(8, 2)
