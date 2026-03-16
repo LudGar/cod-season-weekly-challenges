@@ -1,35 +1,44 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BO7 Weekly Challenge Tracker</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-
-<div class="top-chrome">
-  <div class="chrome-inner">
-    <div class="season-strip" id="seasonStrip"></div>
-    <div class="week-tabs-chrome" id="weekTabsChrome"></div>
-    <div class="chrome-actions">
-      <button class="btn btn-reset" onclick="confirmReset()" title="Reset to default challenge data">↺ Reset</button>
-      <button class="btn btn-edit" id="editBtn" onclick="toggleEdit()">✏ Edit</button>
-      <button class="btn btn-save" id="saveBtn" style="display:none" onclick="saveAll()">✓ Save</button>
-    </div>
-  </div>
-</div>
-
-<div class="layout">
-  <div class="main-area">
-    <div class="mode-bar" id="modeBar"></div>
-    <div class="scroll-area" id="scrollArea"></div>
-    <div class="complete-bar" id="completeBar"></div>
-  </div>
-  <div class="sidebar" id="sidebar"></div>
-</div>
-<div class="edit-float" id="editFloat"><div class="ep"></div>EDIT MODE — use [number] for tracked values &nbsp;e.g. "Get [25] kills"</div>
-<script src="app.js"></script>
-</body>
+  
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>BO7 Weekly Challenge Tracker</title>
+      <link rel="stylesheet" href="styles.css">
+      <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+   </head>
+  
+   <body>
+     
+      <div class="top-chrome">
+         <div class="chrome-inner">
+            <div class="season-strip" id="seasonStrip"></div>
+            <div class="week-tabs-chrome" id="weekTabsChrome"></div>
+            <div class="chrome-actions">
+               <button class="btn btn-reset" onclick="confirmReset()" title="Reset to default challenge data">↺ Reset</button>
+               <button class="btn btn-edit" id="editBtn" onclick="toggleEdit()">✏ Edit</button>
+               <button class="btn btn-save" id="saveBtn" style="display:none" onclick="saveAll()">✓ Save</button>
+            </div>
+         </div>
+      </div>
+     
+      <div class="layout">
+         <div class="main-area">
+            <div class="mode-bar" id="modeBar"></div>
+            <div class="scroll-area" id="scrollArea"></div>
+            <div class="complete-bar" id="completeBar"></div>
+         </div>
+         <div class="sidebar" id="sidebar"></div>
+      </div>
+      <div class="edit-float" id="editFloat">
+         <div class="ep"></div>
+         EDIT MODE — use [number] for tracked values &nbsp;e.g. "Get [25] kills"
+      </div>
+     
+      <script src="app.js"></script>
+     
+   </body>
+  
 </html>
