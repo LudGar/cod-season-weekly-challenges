@@ -417,40 +417,30 @@ const DEFAULT_SEASONS = [
           { text: "Get a Kill using a Killstreak", xp: 2500 }
         ]
       },
-      1: {
-        COOP: [
-          { text: "Eliminate [200] Guild Tech enemies", xp: 5000 },
-          { text: "Kill [100] Enemies with or affected by your Abilities", xp: 5000 },
-          { text: "In Endgame: complete Toxin Chase or Roadside Salvage activity [3] times", xp: 3500 },
-          { text: "In Endgame: complete the Cargo Intercept or Evidence Collection Assignment [2] times", xp: 3500 },
-          { text: "Get [50] Kills with the Frag Grenade or Cluster Grenade Equipment", xp: 2500 },
-          { text: "In Endgame: successfully Escape in Zone III or higher", xp: 2500 }
-        ],
-        MULTIPLAYER: [
-          { text: "Get [250] Eliminations with SMGs", xp: 5000 },
-          { text: "Earn [30000] Score in Hardpoint, Overload, or Search & Destroy", xp: 5000 },
-          { text: "Get a Kill while holding your breath with a Compatible Weapon [25] times", xp: 3500 },
-          { text: "Get [10] Kills with the Grim Reaper, Archangel Launcher, or War Machine Scorestreaks", xp: 3500 },
-          { text: "Get [5] Kills with Frag Grenades or Cluster Grenade Lethal", xp: 2500 },
-          { text: "With the Tactical Expert Wildcard equipped: Kill [3] enemies affected by your Tactical", xp: 2500 }
-        ],
-        ZOMBIES: [
-          { text: "Get [1000] Eliminations using Wonder Weapons", xp: 5000 },
-          { text: "Reach at least Round [25] in Survival & Successfully Exfil", xp: 5000 },
-          { text: "Earn [75000] Essence in a Single match of Cursed mode", xp: 3500 },
-          { text: "Get [75] Kills with the Shatter Blast Ammo Mod", xp: 3500 },
-          { text: "Kill [10] Zombies without reloading [20] times", xp: 2500 },
-          { text: "Get [65] Kills using the C4 Lethal", xp: 2500 }
-        ],
-        WARZONE: [
-          { text: "Get [40] Eliminations", xp: 5000 },
-          { text: "Open [10] Legendary Supply Crates", xp: 5000 },
-          { text: "Destroy [5] Enemy Vehicles", xp: 3500 },
-          { text: "Make Purchases at 2 different Buy Stations in a single match [10] times", xp: 3500 },
-          { text: "Get [5] Kills while riding in Vehicles", xp: 2500 },
-          { text: "Get [5] Kills with Precision Airstrikes", xp: 2500 }
-        ]
-      },
+      1: {    COOP: [ { text: "Kill [100] Enemies with or affected by your Abilities",                                          xp: 5000 },
+                      { text: "Eliminate [200] Guild Tech enemies",                                                             xp: 5000 },
+                      { text: "Get [50] Kills with the Frag Grenade or Cluster Grenade Equipment",                              xp: 2500 },
+                      { text: "In Endgame: successfully Escape in Zone III or higher",                                          xp: 2500 },
+                      { text: "In Endgame: complete Toxin Chase or Roadside Salvage activity [3] times",                        xp: 3500 },
+                      { text: "In Endgame: complete the Cargo Intercept or Evidence Collection Assignment [2] times",           xp: 3500 }],
+        MULTIPLAYER: [{ text: "Get [250] Eliminations with SMGs",                                                               xp: 5000 },
+                      { text: "Earn [30000] Score in Hardpoint, Overload, or Search & Destroy",                                 xp: 5000 },
+                      { text: "Get a Kill while holding your breath with a Compatible Weapon [25] times",                       xp: 3500 },
+                      { text: "Get [10] Kills with the Grim Reaper, Archangel Launcher, or War Machine Scorestreaks",           xp: 3500 },
+                      { text: "Get [5] Kills with Frag Grenades or Cluster Grenade Lethal",                                     xp: 2500 },
+                      { text: "With the Tactical Expert Wildcard equipped: Kill [3] enemies affected by your Tactical",         xp: 2500 }],
+        ZOMBIES: [    { text: "Earn [75000] Essence in a Single match of Cursed mode",                                          xp: 3500 },
+                      { text: "Get [75] Kills with the Shatter Blast Ammo Mod",                                                 xp: 3500 },
+                      { text: "Get [1000] Eliminations using Wonder Weapons",                                                   xp: 5000 },
+                      { text: "Reach at least Round [25] in Survival & Successfully Exfil",                                     xp: 5000 },
+                      { text: "Kill 10 Zombies without reloading [20] times",                                                   xp: 2500 },
+                      { text: "Get [75] Kills using the C4 Lethal",                                                             xp: 2500 }],
+        WARZONE: [    { text: "Get [40] Eliminations",                                                                          xp: 5000 },
+                      { text: "Make Purchases at 2 different Buy Stations in a single match [10] times",                        xp: 3500 },
+                      { text: "Destroy [5] Enemy Vehicles",                                                                     xp: 3500 },
+                      { text: "Get [5] Kills while riding in Vehicles",                                                         xp: 2500 },
+                      { text: "Open [10] Legendary Supply Crates",                                                              xp: 5000 },
+                      { text: "Get [5] Kills with Precision Airstrikes",                                                        xp: 2500 }]},
       2: {   COOP: [  { text: "Eliminate [300] Fear Enemies",                                                                   xp: 5000 },
                       { text: "In Endgame: Get [300] Eliminations with Exotic Weapons",                                         xp: 5000 },
                       { text: "In Endgame: complete the QuadCore Site Activity [5] times",                                      xp: 3500 },
