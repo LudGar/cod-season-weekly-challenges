@@ -551,8 +551,8 @@ const DEFAULT_SEASONS = [
     },
          6:{
       COOP:[
-        {text:"In Endgame: Complete [25] Activities or Assignments in Zone III or higher",xp:5000},
-        {text:"In Endgame: Eliminate [10] HVTs or Prime Targets in Zone II or higher",xp:5000},
+        {text:"In Endgame: Complete 25 Activities or Assignments in Zone III or higher",xp:5000},
+        {text:"In Endgame: Eliminate 10 HVTs or Prime Targets in Zone II or higher",xp:5000},
         {text:"Prevent [3000] total damage with your Crash Cart or Ballistic Shell Ability",xp:3500},
         {text:"Get [25] Kills with a Melee Weapon or by performing a Finishing Move",xp:3500},
         {text:"In Endgame: Complete the Deep Cover Activity",xp:2500},
