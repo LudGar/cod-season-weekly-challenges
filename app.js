@@ -379,7 +379,7 @@ const DEFAULT_SEASONS = [
         {text:"Get a Kill using a Killstreak",xp:2500}
       ]
     },
-    1:{
+         1:{
       COOP:[
         {text:"Eliminate [200] Guild Tech enemies",xp:5000},
         {text:"Kill [100] Enemies with or affected by your Abilities",xp:5000},
@@ -413,7 +413,7 @@ const DEFAULT_SEASONS = [
         {text:"Get [5] Kills with Precision Airstrikes",xp:2500}
       ]
     },
-    2:{
+         2:{
       COOP:[
         {text:"Eliminate [300] Fear Enemies",xp:5000},
         {text:"In Endgame: Get [300] Eliminations with Exotic Weapons",xp:5000},
@@ -447,7 +447,7 @@ const DEFAULT_SEASONS = [
         {text:"Buy Back or Revive [5] Players",xp:2500}
       ]
     },
-    3:{
+         3:{
       COOP:[
         {text:"Destroy [25] Guild Drones, Sentry Turrets, or VTOLs",xp:5000},
         {text:"In Endgame: complete the Mystery Cargo Assignment [15] times",xp:5000},
@@ -481,7 +481,7 @@ const DEFAULT_SEASONS = [
         {text:"Get a Kill without taking damage [5] times",xp:2500}
       ]
     },
-    4:{
+         4:{
       COOP:[
         {text:"In Endgame: Clear [15] Command Centers or Guild Checkpoints",xp:5000},
         {text:"Get [200] Eliminations with a Weapon at Epic Rarity or Higher",xp:5000},
@@ -515,7 +515,7 @@ const DEFAULT_SEASONS = [
         {text:"Open [2] Legendary Loot Crates in a single match [3] times",xp:2500}
       ]
     },
-    5:{
+         5:{
       COOP:[
         {text:"In Endgame: Complete [25] Activities or Assignments in Zone III or higher",xp:5000},
         {text:"In Endgame: Eliminate [10] HVTs or Prime Targets in Zone II or higher",xp:5000},
@@ -549,8 +549,108 @@ const DEFAULT_SEASONS = [
         {text:"In Black Ops Royale: Travel [200] meters with the Grapple Hook",xp:2500}
       ]
     },
-    6:{COOP:tbdWeek(7,"S2"),MULTIPLAYER:tbdWeek(7,"S2"),ZOMBIES:tbdWeek(7,"S2"),WARZONE:tbdWeek(7,"S2")},
-    7:{COOP:tbdWeek(8,"S2"),MULTIPLAYER:tbdWeek(8,"S2"),ZOMBIES:tbdWeek(8,"S2"),WARZONE:tbdWeek(8,"S2")}
+         6:{
+      COOP:[
+        {text:"In Endgame: Complete [25] Activities or Assignments in Zone III or higher",xp:5000},
+        {text:"In Endgame: Eliminate [10] HVTs or Prime Targets in Zone II or higher",xp:5000},
+        {text:"Prevent [3000] total damage with your Crash Cart or Ballistic Shell Ability",xp:3500},
+        {text:"Get [25] Kills with a Melee Weapon or by performing a Finishing Move",xp:3500},
+        {text:"In Endgame: Complete the Deep Cover Activity",xp:2500},
+        {text:"Get [75] Kills with the Point Turret Equipment or Sentry Turret Scorestreak",xp:2500}
+      ],
+      MULTIPLAYER:[
+        {text:"Get [100] Kills with Assault Rifles while moving",xp:5000},
+        {text:"Earn [30000] total Score in Cliff Town, Torque, Grind, or Firing Range",xp:5000},
+        {text:"With the Specialist Wildcard equipped: earn a Perk [10] times",xp:3500},
+        {text:"Finish [5] Matches having more Kills against your Nemesis than they have against you",xp:3500},
+        {text:"Get [3] Triple Kill Medals or better with an SMG",xp:2500},
+        {text:"Capture [15] Objectives in Hardpoint, Domination, or Overload",xp:2500}
+      ],
+      ZOMBIES:[
+        {text:"Get [750] Kills with Pistols in Cursed mode",xp:5000},
+        {text:"Earn [25] Extermination Medals (25 rapid Kills) with the Ray Gun",xp:5000},
+        {text:"Complete [50] Rounds on Paradox Junction",xp:3500},
+        {text:"Reach Round 25 or greater and successfully Exfil",xp:3500},
+        {text:"Have [8] Perks active at one time",xp:2500},
+        {text:"Get [300] Kills with Scorestreaks",xp:2500}
+      ],
+      WARZONE:[
+        {text:"Get [25] Eliminations with Marksman Rifles",xp:5000},
+        {text:"Get [20] Kills while under fire",xp:5000},
+        {text:"In Black Ops Royale: Earn [2] Top 10 Placements",xp:3500},
+        {text:"In Black Ops Royale: Revive or Redeploy your squad [3] times",xp:3500},
+        {text:"Get [10] Eliminations using Ground Looted Weapons",xp:2500},
+        {text:"In Black Ops Royale: Travel [200] meters with the Grapple Hook",xp:2500}
+      ]
+    },
+         7:{
+      COOP:[
+        {text:"In Endgame: Complete [25] Activities or Assignments in Zone III or higher",xp:5000},
+        {text:"In Endgame: Eliminate [10] HVTs or Prime Targets in Zone II or higher",xp:5000},
+        {text:"Prevent [3000] total damage with your Crash Cart or Ballistic Shell Ability",xp:3500},
+        {text:"Get [25] Kills with a Melee Weapon or by performing a Finishing Move",xp:3500},
+        {text:"In Endgame: Complete the Deep Cover Activity",xp:2500},
+        {text:"Get [75] Kills with the Point Turret Equipment or Sentry Turret Scorestreak",xp:2500}
+      ],
+      MULTIPLAYER:[
+        {text:"Get [100] Kills with Assault Rifles while moving",xp:5000},
+        {text:"Earn [30000] total Score in Cliff Town, Torque, Grind, or Firing Range",xp:5000},
+        {text:"With the Specialist Wildcard equipped: earn a Perk [10] times",xp:3500},
+        {text:"Finish [5] Matches having more Kills against your Nemesis than they have against you",xp:3500},
+        {text:"Get [3] Triple Kill Medals or better with an SMG",xp:2500},
+        {text:"Capture [15] Objectives in Hardpoint, Domination, or Overload",xp:2500}
+      ],
+      ZOMBIES:[
+        {text:"Get [750] Kills with Pistols in Cursed mode",xp:5000},
+        {text:"Earn [25] Extermination Medals (25 rapid Kills) with the Ray Gun",xp:5000},
+        {text:"Complete [50] Rounds on Paradox Junction",xp:3500},
+        {text:"Reach Round 25 or greater and successfully Exfil",xp:3500},
+        {text:"Have [8] Perks active at one time",xp:2500},
+        {text:"Get [300] Kills with Scorestreaks",xp:2500}
+      ],
+      WARZONE:[
+        {text:"Get [25] Eliminations with Marksman Rifles",xp:5000},
+        {text:"Get [20] Kills while under fire",xp:5000},
+        {text:"In Black Ops Royale: Earn [2] Top 10 Placements",xp:3500},
+        {text:"In Black Ops Royale: Revive or Redeploy your squad [3] times",xp:3500},
+        {text:"Get [10] Eliminations using Ground Looted Weapons",xp:2500},
+        {text:"In Black Ops Royale: Travel [200] meters with the Grapple Hook",xp:2500}
+      ]
+    },
+         8:{
+      COOP:[
+        {text:"In Endgame: Complete [25] Activities or Assignments in Zone III or higher",xp:5000},
+        {text:"In Endgame: Eliminate [10] HVTs or Prime Targets in Zone II or higher",xp:5000},
+        {text:"Prevent [3000] total damage with your Crash Cart or Ballistic Shell Ability",xp:3500},
+        {text:"Get [25] Kills with a Melee Weapon or by performing a Finishing Move",xp:3500},
+        {text:"In Endgame: Complete the Deep Cover Activity",xp:2500},
+        {text:"Get [75] Kills with the Point Turret Equipment or Sentry Turret Scorestreak",xp:2500}
+      ],
+      MULTIPLAYER:[
+        {text:"Get [100] Kills with Assault Rifles while moving",xp:5000},
+        {text:"Earn [30000] total Score in Cliff Town, Torque, Grind, or Firing Range",xp:5000},
+        {text:"With the Specialist Wildcard equipped: earn a Perk [10] times",xp:3500},
+        {text:"Finish [5] Matches having more Kills against your Nemesis than they have against you",xp:3500},
+        {text:"Get [3] Triple Kill Medals or better with an SMG",xp:2500},
+        {text:"Capture [15] Objectives in Hardpoint, Domination, or Overload",xp:2500}
+      ],
+      ZOMBIES:[
+        {text:"Get [750] Kills with Pistols in Cursed mode",xp:5000},
+        {text:"Earn [25] Extermination Medals (25 rapid Kills) with the Ray Gun",xp:5000},
+        {text:"Complete [50] Rounds on Paradox Junction",xp:3500},
+        {text:"Reach Round 25 or greater and successfully Exfil",xp:3500},
+        {text:"Have [8] Perks active at one time",xp:2500},
+        {text:"Get [300] Kills with Scorestreaks",xp:2500}
+      ],
+      WARZONE:[
+        {text:"Get [25] Eliminations with Marksman Rifles",xp:5000},
+        {text:"Get [20] Kills while under fire",xp:5000},
+        {text:"In Black Ops Royale: Earn [2] Top 10 Placements",xp:3500},
+        {text:"In Black Ops Royale: Revive or Redeploy your squad [3] times",xp:3500},
+        {text:"Get [10] Eliminations using Ground Looted Weapons",xp:2500},
+        {text:"In Black Ops Royale: Travel [200] meters with the Grapple Hook",xp:2500}
+      ]
+    },
   }
 }
 ];
