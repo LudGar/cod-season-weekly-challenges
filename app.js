@@ -354,7 +354,7 @@ const DEFAULT_SEASONS = [
         ZOMBIES: [    { text: "Get [1500] Eliminations with Rare or higher Rarity Shotguns in Cursed",                          xp: 5000 },
                       { text: "Get [300] Eliminations while T.E.D.D. Tasks are active",                                         xp: 3500 },
                       { text: "Successfully Exfil [10] times in Survival",                                                      xp: 5000 },
-                      { text: "Get [25] Kills with a single Scorestreak [3] times",                                             xp: 3500 },
+                      { text: "Get 25 Kills with a single Scorestreak [3] times",                                               xp: 3500 },
                       { text: "With a Crossbar Underbarrel equipped: Get [25] Massacre Medals",                                 xp: 2500 },
                       { text: "Get [250] Eliminations while Death Perception is active",                                        xp: 2500 }],
         WARZONE: [    { text: "Get [20] Eliminations with Pistols",                                                             xp: 5000 },
