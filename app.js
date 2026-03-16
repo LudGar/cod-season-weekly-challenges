@@ -811,9 +811,6 @@ function renderScrollArea(si,aw,am){
     <div class="wk-rewards-section">
       <div class="wk-rew-header">
         <div class="wk-rew-title">
-          ${editMode
-            ?`<input class="wk-rew-name-edit" value="${esc(rw.name)}" onchange="D.seasons[${si}].weekRewards[${aw}].name=this.value" placeholder="Reward name...">`
-            :`WEEK ${aw+1} REWARDS`}
         </div>
         <div class="wk-rew-status${wkE?' earned':''}">
           <span class="rew-star">⭐</span>
@@ -821,18 +818,6 @@ function renderScrollArea(si,aw,am){
         </div>
       </div>
       <div class="wk-rew-body">
-        ${editMode?`
-          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-            <input class="wk-rew-name-edit" value="${esc(rw.name)}" onchange="D.seasons[${si}].weekRewards[${aw}].name=this.value" placeholder="Reward name...">
-            <input class="wk-rew-name-edit" style="font-size:11px;color:var(--text2);" value="${esc(rw.type||'')}" onchange="D.seasons[${si}].weekRewards[${aw}].type=this.value" placeholder="Type (e.g. Weapon Attachment)">
-          </div>`:`
-          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-            <div>
-              <div class="wk-rew-name">${isTBDweek?`<span style="color:var(--text3);">TBD</span>`:esc(rw.name)}</div>
-              ${rw.type?`<div class="wk-rew-type">${esc(rw.type)}</div>`:''}
-            </div>
-            ${!isTBDweek?`<div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;color:var(--text2);max-width:380px;">Complete any <span style="color:var(--cyan);font-weight:700;">${WRT}</span> challenges from this week in CO-OP, Multiplayer, Zombies, or Warzone</div>`:''}
-          </div>`}
       </div>
     </div>`;
 }
@@ -843,22 +828,6 @@ function renderCard(si,w,m,c){
   const txt=chlData.text, xp=chlData.xp||2500;
   const done=s.progress[w][m][c], max=pv(txt), cur=s.vp[w][m][c]||0;
   const tbd=isTBD(txt);
-
-  if(editMode){
-    return`<div class="chl edit-c" data-m="${m}">
-      <textarea class="chl-inp" rows="2" id="i-${si}-${w}-${m}-${c}"
-        oninput="this.style.height='auto';this.style.height=this.scrollHeight+'px'">${esc(txt)}</textarea>
-      <div style="display:flex;align-items:center;gap:8px;margin-top:6px;">
-        <span style="font-family:'Barlow Condensed',sans-serif;font-size:10px;color:var(--text3);letter-spacing:1px;">XP:</span>
-        <select id="xp-${si}-${w}-${m}-${c}" style="background:var(--bg2);border:1px solid var(--bdr2);color:var(--xp);font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;padding:2px 6px;border-radius:1px;outline:none;" onchange="D.seasons[${si}].challenges[${w}]['${m}'][${c}].xp=parseInt(this.value)">
-          <option value="5000"${xp===5000?' selected':''}>5,000</option>
-          <option value="3500"${xp===3500?' selected':''}>3,500</option>
-          <option value="2500"${xp===2500?' selected':''}>2,500</option>
-        </select>
-        <span class="edit-hint-sm">Use <em>[number]</em> for tracked value</span>
-      </div>
-    </div>`;
-  }
 
   const hv=max!==null&&!tbd, pct=hv?Math.min(100,Math.round(cur/max*100)):0;
   const barPct=hv?pct:(done?100:0);
@@ -988,6 +957,7 @@ function tog(si,w,m,c){
   if(el){el.classList.add('popping');setTimeout(()=>el.classList.remove('popping'),300);}
   render();
 }
+
 function adj(si,w,m,c,d,e){
   e.stopPropagation();
   const s=D.seasons[si],max=pv(s.challenges[w][m][c].text);if(!max)return;
@@ -995,6 +965,7 @@ function adj(si,w,m,c,d,e){
   s.vp[w][m][c]=cur;s.progress[w][m][c]=(cur>=max);
   persist();render();
 }
+
 function setV(si,w,m,c,val,e){
   e.stopPropagation();
   const s=D.seasons[si],max=pv(s.challenges[w][m][c].text);if(!max)return;
@@ -1002,17 +973,15 @@ function setV(si,w,m,c,val,e){
   s.vp[w][m][c]=cur;s.progress[w][m][c]=(cur>=max);
   persist();render();
 }
+
 function setSeason(si){D.act=si;render();}
 function setWeek(si,w){AW[si]=w;render();}
 function setMode(si,w,m){AM[`${si}-${w}`]=m;render();}
 
-  persist();editMode=false;
-  document.getElementById('editBtn').textContent='✏ Edit';
-  document.getElementById('editBtn').className='btn btn-edit';
-  document.getElementById('saveBtn').style.display='none';
-  document.getElementById('editFloat').className='edit-float';
-  render();
-}
+persist();editMode=false;
+document.getElementById('saveBtn').style.display='none';
+render();
+
 function confirmReset(){
   if(!confirm('Reset all challenge data to defaults? This will clear all progress and custom edits.'))return;
   localStorage.removeItem(KEY);
