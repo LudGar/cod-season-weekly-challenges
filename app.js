@@ -4,40 +4,30 @@
 
 function tbdWeek(n, s) {
   return {
-    COOP: [
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 5000 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 5000 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 3500 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 3500 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 2500 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 2500 }
-    ],
-    MULTIPLAYER: [
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 5000 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 5000 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 3500 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 3500 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 2500 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 2500 }
-    ],
-    ZOMBIES: [
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 5000 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 5000 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 3500 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 3500 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 2500 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 2500 }
-    ],
-    WARZONE: [
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 5000 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 5000 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 3500 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 3500 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 2500 },
-      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 2500 }
-    ]
-  };
-}
+     COOP: [      { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 }],
+    MULTIPLAYER: [{ text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 }],
+    ZOMBIES: [    { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 }],
+    WARZONE: [    { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 },
+                  { text: `Season ${s} Week ${n} Challenge — Not Yet Released`, xp: 0 }]};}
 
 const DEFAULT_SEASONS = [
   {
