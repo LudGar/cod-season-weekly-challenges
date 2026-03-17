@@ -303,7 +303,7 @@ const DEFAULT_SEASONS = [
                       { text: "Get [10] Kills with the Grim Reaper, Archangel Launcher, or War Machine Scorestreaks",           xp: 3500 },
                       { text: "Get [5] Kills with Frag Grenades or Cluster Grenade Lethal",                                     xp: 2500 },
                       { text: "With the Tactical Expert Wildcard equipped: Kill [3] enemies affected by your Tactical",         xp: 2500 }],
-        ZOMBIES: [    { text: "Earn [75000] Essence in a Single match of Cursed mode",                                          xp: 3500 },
+        ZOMBIES: [    { text: "Earn 75000 Essence in a Single match of Cursed mode",                                            xp: 3500 },
                       { text: "Get [75] Kills with the Shatter Blast Ammo Mod",                                                 xp: 3500 },
                       { text: "Get [1000] Eliminations using Wonder Weapons",                                                   xp: 5000 },
                       { text: "Reach at least Round [25] in Survival & Successfully Exfil",                                     xp: 5000 },
